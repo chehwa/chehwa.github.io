@@ -1,0 +1,10 @@
+
+
+<a href = '/home/new'>오늘의 일기 쓰기</a><br><br>
+<%@posts.each do |x|%>
+제 목: <%=x.title%><br>
+내 용: <%=x.content%><br>
+    <a href="/home/delete/<%=x.id%>">삭 제</a><br>
+    <a href="/home/edit/<%=x.id%>">수 정</a><br>
+---------------------<br>
+<%end%>
